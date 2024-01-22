@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        td.nested-table{
+        
+        border-right:2px solid black;
+        width:39.5%;
+        
+        }
+        
+        </style>
 </head>
 <body>
-    <table border="1" width="100%">
+    <table border="1" width="100%" cellspacing="0">
         <thead>
             <tr>
                 <th>s.n</th>    
@@ -44,7 +53,7 @@
     <br>
     <br>
 
-    <table border="1" width="100%">
+    <table border="1" width="100%" cellspacing="0">
         <thead>
             <tr>
                 <th>s.n</th>    
@@ -63,24 +72,24 @@
             <tr>
                 <td>3</td>
                 <td colspan="2" rowspan="3">
-                    <table margin="0" cellpading="0" width="100%" border="1" cellspacing="0">
+                    <table margin="0" cellpading="0" width="100%" cellspacing="0">
                         <tbody>
                             <tr>
-                                <td>fhdbfk</td>
-                                <td>fhdbfk</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>fhdbfk</td>
+                                <td class="nested-table">fhdbfk</td>
                                 <td>fhdbfk</td>
                                 
                             </tr>
                             <tr>
-                                <td>fhdbfk</td>
+                                <td class="nested-table">fhdbfk</td>
                                 <td>fhdbfk</td>
                                 
                             </tr>
-                        </tbody>>
+                            <tr>
+                                <td class="nested-table">fhdbfk</td>
+                                <td>fhdbfk</td>
+                                
+                            </tr>
+                        </tbody>
                     </table>
                 </td>
             </tr>
