@@ -187,13 +187,16 @@ footer{
     color:white;
 }
 .courses1,
-.courses2 {
+.courses2,
+.courses3
+{
     width: 100%; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.courses2{
+.courses2,
+.courses3{
 
     margin-top:10px;
 }
