@@ -33,11 +33,11 @@
 //  id=document.getElementById("address").innerHTML="add:torroof";
 //  id=document.getElementById("phone").innerHTML="phone:2343546466";
 
-let full_Name="Shishir sharma";
-let email="shishir@yahoo.com";
-let address="balkuty";
-let phone=65576676767;
-let city="ktm";
+// let full_Name="Shishir sharma";
+// let email="shishir@yahoo.com";
+// let address="balkuty";
+// let phone=65576676767;
+// let city="ktm";
 
 // console.log(full_Name , email,address , phone, city);
 // console.log("Full NAme:",full_Name );
@@ -45,13 +45,13 @@ let city="ktm";
 // console.log("address:",address);
 // console.log("Phone:", phone);
 // console.log("City:" ,city);
-let output=`
-<h1>Full Name: ${full_Name}</h1>
-<p>Email: ${email}</p>
-<p>Address: ${address}</p>
-<p>Phone: ${phone}</p>
-<p>City: ${city}</p>
+// let output=`
+// <h1>Full Name: ${full_Name}</h1>
+// <p>Email: ${email}</p>
+// <p>Address: ${address}</p>
+// <p>Phone: ${phone}</p>
+// <p>City: ${city}</p>
 
-`;
+// `;
 
-document.getElementById("info").innerHTML=output;
+// document.getElementById("info").innerHTML=output;
