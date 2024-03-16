@@ -55,3 +55,157 @@
 // `;
 
 // document.getElementById("info").innerHTML=output;
+// let x=20;
+// let y=20;
+// console.log(x+y);
+
+// if(x>y){
+//     console.log("x is greater");
+// }
+// else if(x==y){
+//     console.log("both are equal");
+
+// }
+// else{
+//     console.log("y is greater");
+    
+// }
+
+// let username="admin";
+// let password="admin002";
+
+// if(username=='admin' && password=='admin0025'){
+//     console.log("welcome to", username);
+// }
+// else{
+//     console.log("invalid");
+// }
+// if(username=='admin' || password=='admin0025'){
+//     console.log("welcome to", username);
+// }
+// else{
+//     console.log("invalid");
+// }
+
+// let nep=52;
+// let mat=52;
+// let soc=0;
+// let sci=0;
+// let bio=0;
+// let total=nep+mat+soc+sci+bio;
+// let per=total/5;
+
+// console.log("total marks", total);
+// console.log("total percent", per);
+// if(per>35 && per<45){
+//     console.log("third division");
+// }
+// else if(per>45 && per<60){
+//     console.log("second division");
+// }
+// else if(per>60 && per<75){
+//     console.log("first division");
+// }
+// else if(per>75){
+//     console.log(" distinction");
+// }
+// else{
+//     console.log("fail")
+// }
+
+// let n=5;
+// if(n%2==0){
+//     console.log("even");
+// }
+// else{
+//     console.log("odd");
+
+// }
+
+// let std_name="ram";
+// let dep="education";
+// if(std_name=="ram"){
+//     if(dep=="education"){
+//         console.log("welcome", std_name,"in", dep,"department");
+//         console.log(`welcome ${std_name} in ${dep} department`)
+//     }
+//     else{
+//         console.log("invalid depart");
+//     }
+// }
+// else{
+//     console.log("invalid std name");
+// }
+
+// for(let x=1;x<=10;x++){
+//     console.log(x);
+// }
+
+// let output=" ";
+// for(let x=1;x<=20;x++)
+// {
+//     output+=`<div class="box"></div>`;
+// }
+
+// {
+//     if(x%2==0){
+//         output+=`<div class="even"></div>`;
+//     }
+//     else{
+//         output+=`<div class="odd"></div>`;
+//     }
+// }
+
+
+// console.log(output);
+
+// document.getElementById("container").innerHTML=output;
+
+
+// setTimeout (function(){
+// alert("hello");
+// },3000);
+
+// setInterval(function(){
+//  alert("hello");
+// },3000)
+
+// console.log(new Date());
+
+// let dt=new Date();
+// let lt=dt.toLocaleTimeString();
+
+// console.log(lt);
+
+// setInterval(function(){
+//     let dt=new Date();
+//     let lt=dt.toLocaleTimeString();
+//     console.log(lt);
+// },1000)
+
+
+// setInterval(function(){
+//     let dt=new Date();
+//     let lt=dt.toLocaleTimeString();
+//     document.getElementById("container").innerHTML=lt;
+// },1000)
+
+// function clock(){
+    
+//         let dt=new Date();
+//         let lt=dt.toLocaleTimeString();
+//         document.getElementById("container").innerHTML=lt;
+// }
+
+// setInterval(clock,1000);
+
+
+// console.log(5+7);
+// console.log(53+72);
+
+// function add(x,y){
+//  console.log(x+y);
+// }
+
+// add(45,67);
+// add(43,7);
