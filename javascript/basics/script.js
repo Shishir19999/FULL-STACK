@@ -1,3 +1,5 @@
+//alerts
+
 alert('hello world');
 
 var UserName='admin';
@@ -5,6 +7,8 @@ var pass='admin002';
 
 console.log(UserName,pass);
 alert(UserName);
+
+//innerhtml usuage
 
 document.getElementById('result').innerHTML="username:admin";
 document.getElementById('result').innerHTML=UserName;
@@ -18,6 +22,7 @@ document.getElementById("email").innerHTML="email:shishir3fjfj";
 document.getElementById("address").innerHTML="add:torroof";
 document.getElementById("phone").innerHTML="phone:2343546466";
 
+//form filling
 
 let full_Name="Shishir sharma";
 let email="shishir@yahoo.com";
@@ -43,6 +48,8 @@ let output=`
 document.getElementById("info").innerHTML=output;
 
 
+// addition with function
+
 console.log(5+7);
 console.log(53+72);
 
@@ -52,3 +59,12 @@ function add(x,y){
 
 add(45,67);
 add(43,7);
+
+
+let a=5;
+let b=6;
+let c=67;
+
+console.log(a);
+console.log(b);
+console.log(c);
