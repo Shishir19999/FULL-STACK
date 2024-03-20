@@ -1,3 +1,5 @@
+//number compare
+
 let x=20;
 let y=20;
 console.log(x+y);
@@ -13,6 +15,8 @@ else{
     console.log("y is greater");
     
 }
+
+//authentication
 
 let username="admin";
 let password="admin002";
@@ -30,6 +34,7 @@ else{
     console.log("invalid");
 }
 
+//marks comparision
 
 let nep=52;
 let mat=52;
@@ -66,6 +71,7 @@ else{
 
 }
 
+//condition check
 
 let std_name="ram";
 let dep="education";
@@ -81,3 +87,57 @@ if(std_name=="ram"){
 else{
     console.log("invalid std name");
 }
+//sorting
+
+x=8
+y=60
+z=100
+
+if (x>y){
+    if (x>z){
+        if (y>z){
+            console.log(x,y,z);
+        }
+        else{
+            console.log(x,z,y);
+        }
+    }
+    else{
+        console.log(z,x,y);
+    }
+}
+else{
+    if (y>z){
+        if (x>z){
+            console.log(y,x,z);
+        }
+        else{
+            console.log(y,z,x);
+        }
+    }
+    else{
+        console.log(z,y,x);
+    }
+}
+
+
+// greatest number
+
+if (x>y){
+     if (x>z){
+         console.log("x is greater");
+     }
+     else{
+         console.log("z is greater");
+     }
+    }
+
+ else{
+     if (y>z){
+         console.log("y is greater");
+     }
+     else
+     {
+         console.log("z is greater");
+     }
+    }
