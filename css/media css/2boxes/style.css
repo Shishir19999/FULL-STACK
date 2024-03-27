@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.container{
+    margin: auto;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+.box1{
+width:49%;
+height:100px;
+background-color: red;
+}
+.box2{
+width:49%;
+height:100px;
+background-color: blue;
+}
+
+@media(max-width:760px){
+    .container{
+        flex-direction: column;
+    }
+    .box1,.box2{
+        width:100%;
+    }
+}

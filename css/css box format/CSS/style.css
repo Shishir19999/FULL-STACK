@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: red;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+.container .first-compartment {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.container .first-compartment aside {
+  width: 20%;
+  height: 400px;
+  background-color: blue;
+}
+.container .first-compartment .right-compartment {
+  width: 80%;
+  height: 400px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+}
+.container .first-compartment .right-compartment .top-main-compartment {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+}
+.container .first-compartment .right-compartment .top-main-compartment .box {
+  margin: 15px;
+  width: 30%;
+  height: 50px;
+  background-color: green;
+}
+.container .first-compartment .right-compartment .bottom-main-compartment {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(34, 175, 24);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .first-compartment .right-compartment .bottom-main-compartment .bottom-compartment {
+  width: 49.8%;
+  height: 150px;
+  background-color: rgb(15, 74, 113);
+}
+.container .second-compartment {
+  width: 100%;
+  height: 150px;
+  background-color: pink;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: gray;
+}/*# sourceMappingURL=style.css.map */
