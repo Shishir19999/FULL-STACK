@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+width:100%;
+background-color: red;
+height:50px;
+}
+.boxes{
+    margin:auto;
+    width:90%;
+    height:300px;
+    display:flex;
+    align-items: center;
+
+}
+.boxes .box-left{
+    width:100%;
+    height:200px;
+    
+}
+.box-left .box1{
+    width:90%;
+    height:100%;
+    background-color: blue;
+}
+.boxes .box-right{
+    width:100%;
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-right .box2{
+    height:50px;
+    width:90%;
+    
+    background-color: pink;
+}
+.middle{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.middle-row{
+    height:100px;
+    width:33.3%;
+    background-color: aqua;
+}
+.last-row{
+    width:100%;
+    height:150px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.left{
+    height:100%;
+    width:49.9%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.last-left{
+    height:49%;
+    width:100%;
+    background-color: gold;
+}
+.right{
+    height:100%;
+    width:49.9%;
+    background-color: gray;
+}
+.footer{
+    width:100%;
+    height:50px;
+    background-color: black;
+}
+
+@media(max-width:760px){
+    .boxes{
+        height:300px;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+
+    }
+    .boxes .box-left{
+        width:100%;
+        height:39%;
+
+    }
+    .box-left .box1{
+        width:100%;
+        height:100%;
+
+    }
+    .boxes .box-right{
+        width:100%;
+        height:59.8%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box-right .box2{
+        width:100%;
+        height:33%;
+    }
+    .middle{
+        height:100px;
+        display:flex;
+        flex-direction: column;
+    }
+    .middle-row{
+        width:100%;
+        height:32%;
+
+    }
+    .last-row{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .left{
+        width:100%;
+        height:59%;
+
+    }
+    .last-left{
+        width:100%;
+        height:49%;
+    }
+    .right{
+        width:100%;
+        height:39%;
+    }
+}
