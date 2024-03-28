@@ -48,3 +48,14 @@ student.forEach((s, index) => {
 
 console.log(output);
 const std=document.getElementById("students-list").innerHTML=output;
+
+let mcount=0;
+let fcount=0;
+if(s.gender==male){
+  mcount++;
+}
+else if(s.gender==female){
+  fcount++;
+}
+document.getElementById("totalmale").innerHTML=mcount;
+document.getElementById("totalfemale").innerHTML=fcount;
