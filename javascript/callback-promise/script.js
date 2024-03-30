@@ -43,7 +43,18 @@ infos().then((res)=>{
 
 
 function studentTask(){
-    
+    // return new Promise((resolve,reject)=>{
+    //     let task=false;
+    //     setTimeout(()=>{
+    //         if(task){
+    //             resolve("task is done");
+                
+    //         }
+    //         else{
+    //             reject("task is not done");
+    //         }
+    //     },2000)
+    // })
     return "i am a student Task "
 }
 
