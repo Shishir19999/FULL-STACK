@@ -30,3 +30,28 @@ function infos(){
 }
 
 console.log(infos());
+
+
+infos().then((res)=>{
+    console.log(res);
+    
+})
+.catch((err)=>{
+    console.log(err);
+});
+
+
+
+function studentTask(){
+    
+    return "i am a student Task "
+}
+
+function getDatas(){
+    let data=studentTask();
+    console.log(data);
+    console.log("i am  datas");
+
+}
+
+getDatas();
