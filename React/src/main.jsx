@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './Demo/App.jsx';
 
 function Apps() {
@@ -15,7 +15,7 @@ let h1 = document.createElement("h1");
 h1.textContent = "h1 Tags";
 root.appendChild(h1);
 
-ReactDOM.createRoot(root).render(
+ReactDOM.render(
   <>
     <React.StrictMode>
       <App />
