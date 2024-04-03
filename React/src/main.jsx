@@ -1,26 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './Demo/App.jsx';
+import ReactDOM from 'react-dom/client';
 
-function Apps() {
-  return (
-    <>
-      <h1>hello world from main.jsx</h1>
-    </>
-  );
-}
-
-let root = document.getElementById('root');
-let h1 = document.createElement("h1");
-h1.textContent = "h1 Tags";
-root.appendChild(h1);
-
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <React.StrictMode>
-      <App />
+
+        
     </React.StrictMode>
-    <br />
-    <Apps />
+   
   </>
 );
