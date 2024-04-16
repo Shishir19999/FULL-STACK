@@ -1,10 +1,13 @@
 const express=require("express");
-
 const mongoose=require('mongoose')
 mongoose.connect('mongodb://localhost:27017/studentFormData') 
+const cors=require('cors')
 
 const app=express();
+app.use(express.json());
+app.use(cors());
 const studentSchema=new mongoose.Schema({
+   
     name:{
         type:String,
         required: true
@@ -24,12 +27,11 @@ const studentSchema=new mongoose.Schema({
 
 })
 const students=mongoose.model("students",studentSchema)
-app.use(express.json())
 
 
 app.get('/',async(req,res)=>{
     let studentsData= await  students.find({})
-    res.status(200).json(studentsData)
+    res.status(200).json(studentsData);
 
 });
 

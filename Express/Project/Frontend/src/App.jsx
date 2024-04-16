@@ -7,22 +7,22 @@ function App() {
   const [phone,setPhone]= useState("");
   const [address,setAddress]= useState("");
   
-  const [students,setStudents]= useState("");
+  const [students,setStudents]= useState([{}]);
 
-  const getStudnet=async()=>{
-    let response=await fetch('http://localhost:3000')
+  const getStudent=async()=>{
+    let response=await fetch('http://localhost:3000');
     let data=await response.json();
-    console.log(data);
+    setStudents(data);
   }
 
   useEffect(()=>{
-    getStudnet();
+    getStudent();
   },[])
 
   const insertData=async (e)=>{
     e.preventDefault();
-    let sendData= {name,email,phone,address}
-    let response=await fetch ('http://localhost:3000',
+    let sendData= {name,email,phone,address};
+    let response=await fetch ('http://localhost:3000/',
     {
       method:'POST',
       headers:{
@@ -30,9 +30,12 @@ function App() {
       },
       body:JSON.stringify(sendData)
       
-    })
+    });
     let data=await response.json();
-    console.log(data)
+    setName('');
+    setEmail('');
+    setPhone('');
+    setAddress('');
   }
 
   return (
@@ -48,21 +51,21 @@ function App() {
           <form action="" onSubmit={insertData}>
             <div className="mb-3">
             <label htmlFor="name" className='form-label'>Name:</label><br />
-            <input type="text" onChange={(e)=>setName(e.target.value)} id="name" className='form-control'/>
+            <input type="text" value={name} onChange={(e)=>setName(e.target.value)} id="name" className='form-control'/>
             </div>
             <div className="mb-3">
-            <label htmlFor="e-mail" className='form-label'>E-mail:</label><br />
-            <input type="e-mail" onChange={(e)=>setEmail(e.target.value)} id="e-mail" className='form-control'/>
+            <label htmlFor="email" className='form-label'>E-mail:</label><br />
+            <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} id="email" className='form-control'/>
             </div>
             <div className="mb-3">
             <label htmlFor="phone" className='form-label'>Phone:</label><br />
-            <input type="text" id="phone" onChange={(e)=>setPhone(e.target.value)} className='form-control'/>
+            <input type="text" value={phone} id="phone" onChange={(e)=>setPhone(e.target.value)} className='form-control'/>
             </div>
             <div className="mb-3">
             <label htmlFor="address" className='form-label'>Address:</label><br />
-            <input type="text" id="address" onChange={(e)=>setAddress(e.target.value)} className='form-control'/>
+            <input type="text" value={address} id="address" onChange={(e)=>setAddress(e.target.value)} className='form-control'/>
             </div>
-            <button  className="btn btn-primary">Submit</button>
+            <button className="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
