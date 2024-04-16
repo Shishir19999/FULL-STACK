@@ -1,9 +1,13 @@
 const express=require("express");
-
+const cors=require('cors');
 const mongoose=require('mongoose')
 mongoose.connect('mongodb://localhost:27017/CRUD')
 
 const app=express();
+app.use(express.json);
+app.use(cors());
+
+
 const studentSchema=new mongoose.Schema({
     name:{
         type:String,
