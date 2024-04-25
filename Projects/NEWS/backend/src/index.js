@@ -16,8 +16,6 @@ if(mode === 'development') {
         console.log(`Server is running on ${http}:${port}`);
     });
 }else{
-
-    
     app.listen(port, () => {
         console.log(`Server is running on ${http}:${port}`);
     });
