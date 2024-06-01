@@ -18,11 +18,9 @@ const TypewriterComponent = () => {
       loop: true
     };
 
-    // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, options);
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.current.destroy();
     };
   }, []);
