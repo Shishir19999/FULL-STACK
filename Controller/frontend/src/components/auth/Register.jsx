@@ -1,19 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
-
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Col,
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  FormFeedback
-} from "reactstrap";
+import { Card, CardHeader, CardBody, Col, Button, Form, FormGroup, Label, Input, FormFeedback } from "reactstrap";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 
@@ -59,7 +47,8 @@ class Register extends Component {
     };
 
     this.props.registerUser(newUser, this.props.history);
-    if (!this.state.errors.length > 0) {
+    // Clear form fields and errors if there are no errors
+    if (Object.keys(this.state.errors).length === 0) {
       this.setState({
         name: "",
         email: "",
@@ -69,6 +58,7 @@ class Register extends Component {
       });
     }
   }
+
   render() {
     const { errors } = this.state;
     return (
@@ -78,7 +68,6 @@ class Register extends Component {
             <Card>
               <CardHeader>Register</CardHeader>
               <CardBody>
-                {/* Form Starts Here */}
                 <Form noValidate onSubmit={this.onSubmit}>
                   <FormGroup row>
                     <Label className="text-md-right" for="name" sm={4}>
@@ -129,11 +118,7 @@ class Register extends Component {
                     </Col>
                   </FormGroup>
                   <FormGroup row>
-                    <Label
-                      className="text-md-right"
-                      for="confirm_password"
-                      sm={4}
-                    >
+                    <Label className="text-md-right" for="confirm_password" sm={4}>
                       Confirm Password
                     </Label>
                     <Col sm={8}>
@@ -154,8 +139,6 @@ class Register extends Component {
                     </Col>
                   </FormGroup>
                 </Form>
-
-                {/* Form Ends Here */}
               </CardBody>
             </Card>
           </div>
@@ -164,6 +147,7 @@ class Register extends Component {
     );
   }
 }
+
 Register.propTypes = {
   registerUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
@@ -175,7 +159,4 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(
-  mapStateToProps,
-  { registerUser }
-)(withRouter(Register));
+export default connect(mapStateToProps, { registerUser })(withRouter(Register));
