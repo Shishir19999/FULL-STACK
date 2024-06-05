@@ -1,3 +1,4 @@
+
 const express = require("express");
 require("dotenv").config();
 const bodyParser = require("body-parser");
@@ -9,28 +10,44 @@ const helmet = require("helmet");
 const path = require("path");
 const passport = require("passport");
 
-const app = new express();
-// Boot Application
-app.listen(application.port);
-console.log(`Server Started at PORT ${application.port}`);
-// view engine setup
-// view engine setup
-app.set("views", path.join(__dirname, "views")); // this is the folder where we keep our pug files
-app.set("view engine", "pug"); // we use the engine pug, mustache or EJS work great too
+const app = express();
 
-//Register Middlewares
-// Takes the raw requests and turns them into usable properties on req.body
+// view engine setup
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "pug");
+
+// Register Middlewares
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
+
 // Passport middleware
 app.use(passport.initialize());
 require("./config/passport")(passport);
 
 // Register Routes
 app.use("/", routes);
-// connect to database
+
+// Connect to database
 mongoose
-  .connect(database.mongoUri, { useNewUrlParser: true })
+  .connect(database.mongoUri, database.mongoOptions)
   .then(() => console.log("MongoDB Connected"))
-  .catch(err => console.log(err));
+  .catch(err => console.error("MongoDB connection error:", err));
+
+// Boot Application
+const PORT = process.env.PORT || application.port;
+const server = app.listen(PORT, () => {
+  console.log(`Server Started at PORT ${PORT}`);
+});
+
+// Handle EADDRINUSE error
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`Port ${PORT} is already in use`);
+    process.exit(1);
+  } else {
+    throw err;
+  }
+});
+
+

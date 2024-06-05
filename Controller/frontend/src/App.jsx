@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {Router, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
-import { ToastContainer, toast } from "react-toastify";
-import store from "./store";
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
@@ -14,7 +13,6 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./common/PrivateRoute";
 import Dashboard from "./components/Dashboard";
-const SweetAlert = require("react-bootstrap-sweetalert");
 // Check for token
 if (localStorage.jwtToken) {
   // Set auth token header auth

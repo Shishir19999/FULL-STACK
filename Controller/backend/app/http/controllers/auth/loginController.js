@@ -13,7 +13,7 @@ exports.login = (req, res) => {
       return res.status(404).json("user not found");
     }
 
-    // Check Password
+    // Check Password 
     bcrypt.compare(req.body.password, user.password).then(isMatch => {
       if (isMatch) {
         // User Matched

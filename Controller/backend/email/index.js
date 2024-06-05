@@ -1,6 +1,7 @@
+const axios = require('axios');
 const nodemailer = require("nodemailer");
 const pug = require("pug");
-const juice = require("juice");
+const inlineCSS = require("inline-css");
 const htmlToText = require("html-to-text");
 const email = require("../config/mail");
 
@@ -13,18 +14,18 @@ const transport = nodemailer.createTransport({
   }
 });
 
-const generateHTML = (filename, options = {}) => {
+const generateHTML = async (filename, options = {}) => {
   const html = pug.renderFile(
     `${__dirname}/../views/email/${filename}.pug`,
     options
   );
-  const inlined = juice(html);
+  const inlined = await inlineCSS(html, { url: ' ' });
   return inlined;
 };
 
-exports.send = options => {
-  const html = generateHTML(options.filename, options);
-  const text = htmlToText.fromString(html);
+exports.send = async options => {
+  const html = await generateHTML(options.filename, options);
+  const text = htmlToText.convert(html);
   const mailOptions = {
     from: email.from,
     to: options.user.email,
