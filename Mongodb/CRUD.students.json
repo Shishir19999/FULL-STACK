@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "661d4bc0fa4d4ca5784559c6"
+  },
+  "name": "Ram",
+  "email": "Ram@gmail.com",
+  "phone": "235534654",
+  "address": "ktm",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661dcffcd245e5ba12d189b7"
+  },
+  "name": "Laxman",
+  "email": "Laxman@gmail.com",
+  "phone": "324554646",
+  "address": "ktm",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661ea2ed1382bbd3320a81f0"
+  },
+  "name": "sita",
+  "email": "sita@gmail.com",
+  "phone": "324554646",
+  "address": "pok",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661ea39e1382bbd3320a81f6"
+  },
+  "name": "Himal",
+  "email": "himal@gmail.com",
+  "phone": "546534657",
+  "address": "pok",
+  "__v": 0
+}]

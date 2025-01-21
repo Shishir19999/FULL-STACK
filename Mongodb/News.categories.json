@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "6636dbf835c74c3b897bfd57"
+  },
+  "name": "Education",
+  "description": "This is an education category",
+  "createdAt": {
+    "$date": "2024-05-05T01:08:08.618Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T01:08:08.618Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6636dbf835c74c3b897bfd5d"
+  },
+  "name": "Weathers",
+  "description": "This is a weathers category",
+  "createdAt": {
+    "$date": "2024-05-05T01:08:08.638Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T01:08:08.638Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6636dbf835c74c3b897bfd5b"
+  },
+  "name": "Sports",
+  "description": "This is a sports category",
+  "createdAt": {
+    "$date": "2024-05-05T01:08:08.631Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T01:08:08.631Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6636dbf835c74c3b897bfd59"
+  },
+  "name": "Books",
+  "description": "This is a books category",
+  "createdAt": {
+    "$date": "2024-05-05T01:08:08.622Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-05T01:08:08.622Z"
+  },
+  "__v": 0
+}]

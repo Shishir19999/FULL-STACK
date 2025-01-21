@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "662f91018062a10967052656"
+  },
+  "name": "user",
+  "email": "user@gmail.com",
+  "password": "$2b$10$F5H6Kjfi2yjQgtFjxjR7e.g2MXBCujRpee1CUwY0XSlQi4At7BugG",
+  "gender": "male",
+  "role": "user",
+  "image": "",
+  "createdAt": {
+    "$date": "2024-04-29T12:22:25.406Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-29T12:22:25.406Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "662f91018062a10967052655"
+  },
+  "name": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2b$10$FZYBCR87bNx0CTwklFZYg.Vz5gx3lNTEO4.EQK7Q6rWvj1yCebpc2",
+  "gender": "male",
+  "role": "admin",
+  "image": "",
+  "createdAt": {
+    "$date": "2024-04-29T12:22:25.401Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-29T12:22:25.401Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6655afb121daca3e80ea3a12"
+  },
+  "name": "Rebecca Griffin",
+  "email": "shishir@gmail.com",
+  "password": "$2b$10$t80atyaG.sQcc1jyyZhmruZRV9B2Y01V0XDyeuQ3DI1VWkSGAybXy",
+  "gender": "male",
+  "role": "user",
+  "image": "",
+  "createdAt": {
+    "$date": "2024-05-28T10:19:29.374Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-28T10:19:29.374Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66efe1e6094eef2ccaa707dd"
+  },
+  "name": "Lilah Mcintyre",
+  "email": "vyjojasu@mailinator.com",
+  "password": "$2b$10$p0R44BUeYAK3i/MHNwrWr./io2wPtAZMxy7NMiodelIcDTwMSWwIC",
+  "gender": "male",
+  "role": "user",
+  "image": "",
+  "createdAt": {
+    "$date": "2024-09-22T09:22:46.118Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-22T09:22:46.118Z"
+  }
+}]

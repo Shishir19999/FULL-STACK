@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "66487f73deb0d5003af04dc6"
+  },
+  "email": "shishirsharma878@gmail.com",
+  "password": "$2b$10$.31OYnkXRXCSLLVcup/jo.7FcXa4TFic/oAODqVIOIexfjtcx7DQ2",
+  "__v": 0,
+  "otp": ""
+},
+{
+  "_id": {
+    "$oid": "66488497b3893eff9f2a7956"
+  },
+  "email": "shishirsharma199999@gmail.com",
+  "password": "$2b$10$BwAEMX6JGAjchgKK6e5tz.5i3Snu334AHaPhPpXQKR4jdcmsPL73y",
+  "__v": 0
+}]

@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "66969bb0b4fb36d1c26e6fef"
+  },
+  "name": "test",
+  "email": "test@test.com",
+  "password": "$2b$10$xSpUdSKIKwstXggqZlWtUeTdF4GWoiHHJtt5xwXIytJuKPfwZgoSe",
+  "phone": "1234456789",
+  "address": "jdbfkbi djbdf",
+  "role": 0,
+  "createdAt": {
+    "$date": "2024-07-16T16:11:28.877Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-16T16:11:28.877Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f4474c1be31566ef229a08"
+  },
+  "name": "admin",
+  "email": "admin@admin",
+  "password": "$2b$10$HYmtw0whyg7oZAiQJgjeJeube7c8S0G.dag8Lcvk.bvYEd.l3dh4S",
+  "phone": "12333545",
+  "address": "fjdsbs",
+  "role": 1,
+  "createdAt": {
+    "$date": "2024-09-25T17:24:28.657Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T17:24:28.657Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f571d1f3afa272be709a31"
+  },
+  "name": "Marah Saunders",
+  "email": "fomuqe@mailinator.com",
+  "password": "$2b$10$NvgjsM1Ns.YpD7L32Ud8QuPkPAV.ei128/8x2CWzsNen8VeIDXjm2",
+  "phone": "+1 (276) 573-1952",
+  "address": "Sint minima eligendi",
+  "role": 0,
+  "createdAt": {
+    "$date": "2024-09-26T14:38:09.955Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-26T14:38:09.955Z"
+  },
+  "__v": 0
+}]

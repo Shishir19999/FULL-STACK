@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "6647735135f7187e9859089c"
+  },
+  "patientName": "ashish",
+  "doctorName": "chandra",
+  "date": {
+    "$date": "2024-05-16T00:00:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67503525d0f1725b41be06fc"
+  },
+  "patientName": "ashish",
+  "doctorName": "ashish",
+  "date": {
+    "$date": "2024-12-11T00:00:00.000Z"
+  },
+  "__v": 0
+}]
