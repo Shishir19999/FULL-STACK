@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "6750358e5be3fb8c6356cafc"
+  },
+  "user": "jbdjbd",
+  "message": "hdbchkdbcxb cjkd",
+  "timestamp": {
+    "$date": "2024-12-04T10:57:18.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675035a35be3fb8c6356cb0a"
+  },
+  "user": "Consectetur dolor ut",
+  "message": "Consequatur debitis",
+  "timestamp": {
+    "$date": "2024-12-04T10:57:39.979Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675035a65be3fb8c6356cb0e"
+  },
+  "user": "Ut enim do nisi mole",
+  "message": "Anim autem voluptate",
+  "timestamp": {
+    "$date": "2024-12-04T10:57:42.727Z"
+  },
+  "__v": 0
+}]

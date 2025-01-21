@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6647763635f7187e985908bb"
+  },
+  "name": "zashbhd",
+  "age": 23,
+  "gender": "male",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664777da35f7187e985908c7"
+  },
+  "name": "fnjdfdsl",
+  "age": 34,
+  "gender": "male",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67502f76d0f1725b41be06e5"
+  },
+  "name": "Voluptatem vitae do ",
+  "age": 12,
+  "gender": "female",
+  "__v": 0
+}]

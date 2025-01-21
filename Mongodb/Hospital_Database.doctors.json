@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "6647733935f7187e98590898"
+  },
+  "name": "ccchn",
+  "specialty": "eye",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "664774e535f7187e985908ab"
+  },
+  "name": "ashish",
+  "specialty": "eyxxx",
+  "__v": 0
+}]

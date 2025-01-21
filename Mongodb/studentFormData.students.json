@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "661eaae1147f30286779dd8c"
+  },
+  "name": "gopal",
+  "email": "gopal@gmail.com",
+  "phone": "546534657",
+  "address": "pok",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661eab20147f30286779dd8f"
+  },
+  "name": "laxmi",
+  "email": "laxmi@gmail.com",
+  "phone": "546534657",
+  "address": "pok",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661eaec90ac8b11932118d9a"
+  },
+  "name": "Shishir Sharma",
+  "email": "shishirsharma199@gmail.com",
+  "phone": "+977-9851246661",
+  "address": "fsdgfs",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "662070f4e91ae5320026be60"
+  },
+  "name": "fafnaf",
+  "email": "aakuaakanksha70@gmail.com",
+  "phone": "+977-9862022849",
+  "address": "fsfsfsfsf",
+  "__v": 0
+}]
