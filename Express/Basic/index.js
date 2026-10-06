@@ -16,7 +16,6 @@ app.get('/news',(req,res)=>{
         {title:"title1",description:"description"}
     ]
     res.json(newsData);
-    res.send("news Data")
 })
 app.get('/user',(req,res)=>{
     res.send('Hello all user')
