@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 function App() {
   const [name, setName] = useState('');
@@ -7,23 +9,31 @@ function App() {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
 
-  const [students, setStudents] = useState([{}]);
+  const [students, setStudents] = useState([]);
 
   const getStudent = async () => {
-    let response = await fetch('http://localhost:3000');
+    let response = await fetch(API_URL);
     let data = await response.json();
     console.log(data);
-    setStudents(data);
+    setStudents(Array.isArray(data) ? data : []);
   };
 
   useEffect(() => {
-    getStudent();
+    let active = true;
+    fetch(API_URL)
+      .then((response) => response.json())
+      .then((data) => {
+        if (active) setStudents(Array.isArray(data) ? data : []);
+      });
+    return () => {
+      active = false;
+    };
   }, []);
 
   const insertData = async (e) => {
     e.preventDefault();
     let sendData = { name, email, phone, address };
-    let response = await fetch('http://localhost:3000/', {
+    let response = await fetch(`${API_URL}/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -31,7 +41,7 @@ function App() {
       body: JSON.stringify(sendData),
     });
 
-    let data = await response.json();
+    await response.json();
     getStudent();
     setName('');
     setEmail('');
@@ -40,10 +50,10 @@ function App() {
   };
 
   const deleteStudent = async (id) => {
-    let response = await fetch(`http://localhost:3000/${id}`, {
+    let response = await fetch(`${API_URL}/${id}`, {
       method: 'DELETE',
     });
-    let data = await response.json();
+    await response.json();
     getStudent();
   };
 
@@ -127,7 +137,7 @@ function App() {
               {students &&
                 students.map((student, index) => {
                   return (
-                    <tr key={index}>
+                    <tr key={student._id ?? index}>
                       <td>{student.name}</td>
                       <td>{student.email}</td>
                       <td>{student.phone}</td>
@@ -150,22 +160,17 @@ function App() {
           {students &&
             students.map((student, index) => {
               return (
-                <div className="col-md-3">
+                <div className="col-md-3" key={student._id ?? index}>
                   <div className="card">
-                    <img
-                      alt="Card image cap"
-                      className="card-img-top"
-                      src="..."
-                    />
                     <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">{student.name}</h5>
                       <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        {student.email}
+                        <br />
+                        {student.phone}
+                        <br />
+                        {student.address}
                       </p>
-                      <a className="btn btn-primary" href="#">
-                        Go somewhere
-                      </a>
                     </div>
                   </div>
                 </div>
